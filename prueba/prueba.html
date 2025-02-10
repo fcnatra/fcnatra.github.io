@@ -78,12 +78,27 @@
 	.hidden {
 	    display: none;
 	}
+	
+	#header-image {
+            width: 80%; /* Adjust as needed */
+            max-width: 800px; /* Optional: Set a maximum width */
+            display: block; /* Prevents image from creating extra space */
+            margin: 0 auto; /* Centers the image */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Blur effect */
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        #header-image:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
     </style>
     <title>ACMusicSerantes</title>
 </head>
 <body>
     <header>
-        <h1>Asociación Cultural ACMusic Serantes</h1>
+        <a href="https://m.facebook.com/acmusicserantes" target="_blank"> <img id="header-image" src="https://m.facebook.com/photo.php?fbid=548234810664726" alt="ACMusic Serantes"> </a>
+	<h1>Asociación Cultural ACMusic Serantes</h1>
     </header>
 
     <div id="menu" class="hidden">

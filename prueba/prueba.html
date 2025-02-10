@@ -1,147 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>ACMusicSerantes</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #000000, #1a1a1a); /* Degradado de negro a gris oscuro */
-            color: #ffffff; /* Color de texto blanco para contraste */
-            font-family: 'Montserrat', sans-serif; /* Fuente de letra para el texto */
-            margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
-            display: flex; /* Habilita el diseño flexible */
-            flex-direction: column; /* Alinea los elementos verticalmente */
-            min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+            background: linear-gradient(to bottom, #000000, #1a1a1a);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             min-height: 100vh;
-            background-image: url("https://fcnatra.github.io/prueba/Gemini_Generated_Image_b0fnbjb0fnbjb0fn.jpg"); /* Reemplaza con la URL de tu imagen */
-            background-size: cover; /* Cubre todo el fondo */
-            background-attachment: fixed; /* Fija la imagen al fondo */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-image: url("https://fcnatra.github.io/prueba/Gemini_Generated_Image_b0fnbjb0fnbjb0fn.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
         }
 
         header {
-            text-align: center; /* Centra el texto del encabezado */
-            padding: 20px; /* Espacio alrededor del encabezado */
+            text-align: center;
+            padding: 20px;
+            width: 100%;
         }
 
-        nav {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente para la barra de navegación */
-            padding: 10px; /* Espacio alrededor de la barra de navegación */
-        }
-
-        nav ul {
-            list-style: none; /* Elimina los puntos de la lista */
-            margin: 0; /* Elimina los márgenes de la lista */
-            padding: 0; /* Elimina el relleno de la lista */
-            text-align: center; /* Centra los elementos de la lista */
-        }
-
-        nav li {
-            display: inline; /* Muestra los elementos de la lista en línea */
-            margin: 0 10px; /* Espacio entre los elementos de la lista */
-        }
-
-        nav a {
-            color: #ffffff; /* Color de texto blanco para los enlaces */
-            text-decoration: none; /* Elimina el subrayado de los enlaces */
-        }
-
-        main {
-            padding: 20px; /* Espacio alrededor del contenido principal */
-            flex: 1; /* Permite que el contenido principal se expanda para llenar el espacio disponible */
-        }
-
-        footer {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente para el pie de página */
-            padding: 10px; /* Espacio alrededor del pie de página */
-            text-align: center; /* Centra el texto del pie de página */
-        }
-		
-	.frame-container {
-		width: 80%;
-		margin-bottom: 20px; /* Espacio entre los frames */
-	}
-
-	iframe {
-		width: 100%;
-		height: 300px; /* Ajusta la altura según tus necesidades */
-		border: none; /* Opcional: Elimina el borde del frame */
-	}
-
-	.hidden {
-	    display: none;
-	}
-	
-	#header-image {
-            width: 80%; /* Adjust as needed */
-            max-width: 800px; /* Optional: Set a maximum width */
-            display: block; /* Prevents image from creating extra space */
-            margin: 0 auto; /* Centers the image */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Blur effect */
-            transition: transform 0.3s ease; /* Smooth hover effect */
+        #header-image {
+            width: 80%;
+            max-width: 800px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
         }
 
         #header-image:hover {
-            transform: scale(1.05); /* Slightly enlarge on hover */
-		
-	#other-images {
-            width: 90%; /* Adjust as needed */
-            max-width: 800px; /* Optional: Set a maximum width */
-            display: block; /* Prevents image from creating extra space */
-            margin: 0 auto; /* Centers the image */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Blur effect */
-            transition: transform 0.3s ease; /* Smooth hover effect */
+            transform: scale(1.05);
         }
-		
-	#link {
-	  background-color: #a7d1ab;
-	  padding: 5px 10px;
-	  border-radius: 5px;
-	}
 
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+            width: 100%;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .frame-container {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #other-images {
+            width: 90%;
+            max-width: 800px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        #link {
+            background-color: #a7d1ab;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Media queries para diseño responsive */
+        @media (max-width: 767px) {
+            body {
+                font-size: 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .frame-container {
+                width: 90%;
+            }
+
+            iframe {
+                height: 200px;
+            }
+
+            #header-image {
+                width: 90%;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #other-images {
+                width: 90%;
+            }
         }
     </style>
-    <title>ACMusicSerantes</title>
 </head>
+
 <body>
     <header>
-        <a href="https://www.facebook.com/acmusicserantes" target="_blank"> <img id="header-image" src=".\cabecera.png" alt="ACMusic Serantes"> </a>
-	<h1>Asociación Cultural ACMusic Serantes</h1>
+        <a href="https://www.facebook.com/acmusicserantes" target="_blank"> <img id="header-image" src=".\cabecera.png"
+                alt="ACMusic Serantes"> </a>
+        <h1>Asociación Cultural ACMusic Serantes</h1>
     </header>
 
     <div id="menu" class="hidden">
-	<nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Música</a></li>
-            <li><a href="#">Conciertos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-	</div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Música</a></li>
+                <li><a href="#">Conciertos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
-	<p style="text-align: center;">Aquí encontrarás información sobre nuestra asociación, grupos,
-		próximos conciertos y mucho más: <a id="link" href="https://www.facebook.com/acmusicserantes">facebook.com/acmusicserantes</a></p>
-		
-	</br></br>
-	<a href="https://www.facebook.com/acmusicserantes" target="_blank">
-		<img id="other-images" src=".\grupo1.png" alt="ACMusic Serantes">
-	</a>
-	
-	</br></br></br>
-	<a href="https://www.facebook.com/acmusicserantes" target="_blank">
-		<img id="other-images" src=".\grupo1.png" alt="ACMusic Serantes">
-	</a>
+        <p style="text-align: center;">Aquí encontrarás información sobre nuestra asociación, grupos,
+            próximos conciertos y mucho más: <a id="link"
+                href="https://www.facebook.com/acmusicserantes">facebook.com/acmusicserantes</a></p>
+
+        </br></br>
+        <a href="https://www.facebook.com/acmusicserantes" target="_blank">
+            <img id="other-images" src=".\grupo1.png" alt="ACMusic Serantes">
+        </a>
+
+        </br></br></br>
+        <a href="https://www.facebook.com/acmusicserantes" target="_blank">
+            <img id="other-images" src=".\grupo1.png" alt="ACMusic Serantes">
+        </a>
     </main>
 
     <footer>
@@ -149,4 +183,5 @@
     </footer>
 
 </body>
+
 </html>

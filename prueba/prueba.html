@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>ACMusicSerantes</title>
     <style>
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         body {
             background: linear-gradient(to bottom, #000000, #1a1a1a);
             color: #ffffff;
@@ -17,7 +22,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background-image: url("https://fcnatra.github.io/prueba/Gemini_Generated_Image_b0fnbjb0fnbjb0fn.jpg");
+            background-image: url("./fondo.jpg");
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -147,7 +152,7 @@
 <body>
     <header>
         <a href="https://www.facebook.com/acmusicserantes" target="_blank"> <img id="header-image" src=".\cabecera.png"
-                alt="ACMusic Serantes"> </a>
+            style="max-width: 500px; width: auto;" alt="ACMusic Serantes"> </a>
         <h1>Asociación Cultural ACMusic Serantes</h1>
     </header>
 
@@ -163,18 +168,19 @@
     </div>
 
     <main>
-        <p style="text-align: center;">Aquí encontrarás información sobre nuestra asociación, grupos,
-            próximos conciertos y mucho más: </br></br><a id="link"
-                href="https://www.facebook.com/acmusicserantes">facebook.com/acmusicserantes</a></p>
+        <p style="text-align: center;">
+            Aquí encontrarás información sobre nuestra asociación, grupos, próximos conciertos y mucho más: </br></br>
+            <a id="link" href="https://www.facebook.com/acmusicserantes">facebook.com/acmusicserantes</a>
+        </p>
 
         </br></br>
         <a href="https://www.facebook.com/acmusicserantes" target="_blank">
-            <img id="other-images" src=".\grupo1.png" alt="ACMusic Serantes">
+            <img id="other-images" src="./grupo1.png" style="max-width: 500px; width: auto;" alt="ACMusic Serantes">
         </a>
 
-        </br></br></br>
-        <a href="https://www.facebook.com/acmusicserantes" target="_blank">
-            <img id="other-images" src=".\grupo1.png" alt="ACMusic Serantes">
+        </br></br>
+        <a href="http://www.bilongolt.com" target="_blank">
+            <img id="other-images" src="./grupo2.png" style="max-width: 500px; width: auto;" alt="Bilongo LT">
         </a>
     </main>
 

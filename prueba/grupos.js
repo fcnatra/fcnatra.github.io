@@ -20,7 +20,7 @@ const elements = [
     // VALKYRIA
     {
         url: "https://www.instagram.com/valkyria_oficial/",
-        image: "http://www.metaleuskadi.com/wp-content/uploads/2016/03/Valkyria_Indomito.jpg",
+        image: "https://fanmusicfest.com/sites/default/files/styles/escrec_125x125/public/Valkyria.jpg",
         title: "Valkyria"
     },
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>ACMusicSerantes</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+
+<body>
+    <header style="padding-top: 0;">
+        <a href="https://www.facebook.com/acmusicserantes" target="_blank">
+            <img id="header-image" src=".\cabecera.png" style="max-width: 500px; width: 100%; margin-top: 0;" alt="ACMusic Serantes">
+        </a>
+        <h1>Asociación Cultural ACMusic Serantes</h1>
+    </header>
+
+    <div id="menu" class="hidden">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Música</a></li>
+                <li><a href="#">Conciertos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <p style="text-align: center;">
+            Aquí encontrarás información sobre nuestra asociación, grupos, próximos conciertos y mucho más: </br></br>
+            <a id="link" href="https://www.facebook.com/acmusicserantes">facebook.com/acmusicserantes</a>
+        </p>
+
+        
+        <a href="https://www.facebook.com/acmusicserantes" target="_blank">
+            <img id="other-images" src="./FotoIntegrantes.png" style="max-width: 500px; width: 100%;" alt="ACMusic Serantes">
+        </a>
+        </br></br>
+
+        <!-- AQUÍ ES DONDE COMIENZAN LAS IMÁGENES DE LOS GRUPOS QUE SE CARGAN DESDE EL SCRIPT GRUPOS.JS -->
+        <div id="dynamic-items"></div>
+        <!-- El bloque de imágenes termina aquí -->
+    </main>
+
+    <footer>
+        <p>Derechos de autor © 2025 ACMusicSerantes</p>
+    </footer>
+
+    <!-- Se incluye el script que cargará los elementos dinámicamente -->
+    <script src="grupos.js"></script>
+</body>
+
+</html>

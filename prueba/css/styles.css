@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Centrar el contenido del header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Centrar el contenido del header y alinear elementos */
+#header-content {
+    display: flex; /* Usar Flexbox para alinear el logo y el texto horizontalmente */
+    align-items: center; /* Alinear verticalmente */
+    gap: 20px; /* Espaciado entre el logo y el texto */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para el logo de la cabecera */
+#header-logo {
+    display: block;
+    width: 20%; /* Ajustar el tamaño del logo */
+    min-width: 150px;
+    height: auto;
+    border-radius: 50%; /* Convertir en círculo */
+    object-fit: cover;
+}
+
+/* Estilo para la imagen de la asociación */
+#landscape-photo {
+    display: block;
+    width: 80%; /* Ajustar el tamaño de la foto */
+    /* max-width: 600px; */
+    height: auto;
+    border-radius: 15px; /* Redondear esquinas */
+    margin: 20px auto; /* Centrar horizontalmente */
+}
+
+/* Centrar el texto del título y el panel de bandas */
+main {
+    text-align: center; /* Centrar el contenido del main */
+}
+
+h1 {
+    /* font-size: calc(2em + 1vw); */
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: #333; /* Color del texto */
+    font-family: 'Montserrat', sans-serif !important; /* Usar fuente Montserrat */
+    text-align: center; /* Alinear el texto a la izquierda */
+}
+
+/* Estilo para el título del panel */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Panel de bandas */
+#band-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espaciado entre tarjetas */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar el panel horizontalmente */
+}
+
+.band-card {
+    perspective: 1000px; /* Para el efecto de volteo */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.band-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Ambas caras ocupan el 100% del contenedor */
+    backface-visibility: hidden; /* Ocultar la cara trasera cuando no está visible */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; /* Evitar que el contenido desborde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+}
+
+.card-front img {
+    max-width: 100%;
+    height: 90%;
+    border-radius: 7px;
+    object-fit: contain; /* Asegurar que la imagen se recorte si es necesario */
+    box-sizing: border-box; /* Asegurar que el margen no afecte el tamaño total */
+}
+
+.card-front p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card-back {
+    background-color: #fff;
+    transform: rotateY(180deg); /* Voltear la parte trasera */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px; /* Reduce el padding si es necesario */
+    box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+}
+
+.card-back h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-back a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-back a:hover {
+    text-decoration: underline;
+}

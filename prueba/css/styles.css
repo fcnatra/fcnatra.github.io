@@ -121,7 +121,7 @@ h2 {
 }
 
 .card-back {
-    background-color: #1e1e2f; /* Dark card background */
+    background-color: #0f5163; /* Dark card background */
     color: #e0e0e0; /* Light text */
     transform: rotateY(180deg); /* Voltear la parte trasera */
     display: flex;

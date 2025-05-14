@@ -14,7 +14,7 @@ const bands = [
     {
         name: "Metallica",
         style: "Rock",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Metallica_wordmark.svg/1920px-Metallica_wordmark.svg.png",
+        imageUrl: "https://www.1min30.com/wp-content/uploads/2018/07/Symbole-Metallica-500x281.jpg",
         website: "https://www.metallica.com/"
     },
     {

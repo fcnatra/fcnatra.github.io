@@ -8,9 +8,16 @@ body {
 
 /* Header styles */
 header {
-    text-align: center;
-    padding: 20px;
-    /* background-color: #1e1e2f; Darker header background */
+    display: flex; /* Usar Flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: flex-start; /* Alinear a la izquierda */
+    padding: 10px 20px; /* Reducir el padding */
+    background-color: #121212; /* Fondo oscuro para consistencia */
+    position: fixed; /* Fijar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
     color: #ffffff; /* White text */
 }
 
@@ -18,19 +25,25 @@ header {
 #header-content {
     display: flex; /* Usar Flexbox para alinear el logo y el texto horizontalmente */
     align-items: center; /* Alinear verticalmente */
-    gap: 20px; /* Espaciado entre el logo y el texto */
-    justify-content: center; /* Centrar horizontalmente */
-    margin-bottom: 20px; /* Espaciado inferior */
+    gap: 10px; /* Espaciado entre elementos */
+    font-size: 0.9em; /* Reducir el tamaño del texto */
+    color: #ffffff; /* Texto blanco */
+    /*margin-bottom: 20px;  Espaciado inferior */
 }
 
 /* Estilo para el logo de la cabecera */
 #header-logo {
     display: block;
-    width: 20%; /* Ajustar el tamaño del logo */
-    min-width: 150px;
-    height: auto;
-    border-radius: 50%; /* Convertir en círculo */
+    width: 40px; /* Reducir el tamaño del logo */
+    height: 40px; /* Asegurar proporción */
+    margin-right: 10px; /* Espaciado entre el logo y el texto */
+    border-radius: 50%; /* Mantener el logo circular */
     object-fit: cover;
+}
+
+/* Landscape photo styles */
+#association-image-container {
+    margin-top: 135px; /* Ajustar según la altura del header */
 }
 
 #landscape-photo {
@@ -39,12 +52,13 @@ header {
     height: auto;
     border-radius: 15px;
     margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra sutil */
 }
 
 /* Centrar el texto del título y el panel de bandas */
 main {
     text-align: center; /* Centrar el contenido del main */
+    margin-top: 60px; /* Ajustar según la altura del header */
 }
 
 h1, h2 {
